@@ -203,6 +203,12 @@
                                     <h4 class="font-semibold text-lg text-gray-800">Land Degradation</h4>
                                     <p class="text-sm text-gray-600">Monitor soil erosion.</p>
                                 </a>
+                                <!-- New Overview button added here -->
+                                <a href="baobab_spa_dashboard.html" class="widget-card p-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition">
+                                    <span class="text-5xl mb-3">🌍</span>
+                                    <h4 class="font-semibold text-lg text-gray-800">Overview</h4>
+                                    <p class="text-sm text-gray-600">Back to the main summary.</p>
+                                </a>
                             </div>
                         </div>
                         <!-- END NEW SECTION: Large Square Icon Buttons -->
@@ -330,7 +336,7 @@ const chartConfigs = {
         { id: 'rm-bar', type: 'bar', title: 'Resource Consumption Per Capita', dataFn: getResourceConsumptionData },
         { id: 'rm-doughnut', type: 'doughnut', title: 'Circular Economy Score Distribution', dataFn: getCircularEconomyScoreData },
     ],
-    'economic-empowerment': [
+    "economic-empowerment": [
         { id: 'ee-bar', type: 'bar', title: 'Highest Poverty Rates', dataFn: getPovertyRateData },
         { id: 'ee-line', type: 'line', title: 'GDP Growth Trends', dataFn: getGdpGrowthData },
     ],
