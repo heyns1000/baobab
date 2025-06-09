@@ -103,7 +103,7 @@
                         <option value="Oceania">Oceania</option>
                     </select>
                 </div>
-                 <!-- Mobile Nav Toggle -->
+                    <!-- Mobile Nav Toggle -->
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="p-2 rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-100">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -581,8 +581,8 @@ function updateAllCharts() {
             // Clear data for charts not on the active dashboard to prevent stale data display
             // This is primarily for global dashboards, so they don't load data for non-active themes.
             if (chart.data.labels.length > 0) {
-                 chart.data = { labels: [], datasets: [] };
-                 chart.update();
+                chart.data = { labels: [], datasets: [] };
+                chart.update();
             }
         }
     });
@@ -682,7 +682,7 @@ function getPoachingIncidentsByContinentData(data) {
 
     // Filter out continents with 0 incidents if not 'All' view, or keep all for comparison
     const labels = Object.keys(continentCounts).filter(c => currentFilter === 'All' || continentCounts[c] > 0);
-    const chartData = labels.map(c => continentAverages[c]);
+    const chartData = labels.map(c => continentCounts[c]); // Corrected to use continentCounts directly
 
     return {
         labels: labels,
@@ -926,3 +926,6 @@ function getSoilHealthData(data) {
         }]
     };
 }
+</script>
+</body>
+</html>
