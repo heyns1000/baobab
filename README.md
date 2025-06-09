@@ -186,7 +186,15 @@ baobab_project/
 │   ├── contact.html
 │   ├── deforestation_dashboard.html
 │   ├── ocean_plastic_dashboard.html
-│   └── ... (all other thematic dashboards)
+│   ├── wildlife_protection_dashboard.html
+│   ├── energy_optimization_dashboard.html
+│   ├── resource_management_dashboard.html
+│   ├── economic_empowerment_dashboard.html
+│   ├── community_resilience_dashboard.html
+│   ├── water_security_dashboard.html
+│   ├── air_quality_dashboard.html
+│   ├── global_health_dashboard.html
+│   └── land_degradation_dashboard.html
 ├── static/                 # Directory for static assets (CSS, JavaScript, images, fonts)
 │   ├── css/
 │   ├── js/
