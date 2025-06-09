@@ -5,23 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌳 The Baobab Security Network™ - Global Protection & Empowerment</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; background-color: #F5F5F5; color: #333333;}
-        .hero-section-new {
-            background-color: #FFFFFF; /* Light background for hero */
-            color: #333333;
+        /* Base styles for the entire page, ensuring consistent font and background */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden; /* Prevents horizontal scroll */
+            background-color: #F5F5F5; /* Warm Neutral: Light Beige, consistent with dashboards */
+            color: #333333; /* Dark gray for primary text */
+            line-height: 1.6; /* Improved readability for body text */
         }
-        .feature-card { transition: all 0.3s ease-in-out; }
-        .feature-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-color: #E5E7EB; } /* Lighter shadow and border */
-        .connect-line { background: linear-gradient(to right, #60A5FA, #3B82F6, #2563EB); height: 2px; } /* Blue gradient */
+
+        /* Styling for the hero section background and text colors */
+        .hero-section-new {
+            background-color: #FFFFFF; /* Clean white background for the hero */
+            color: #333333; /* Dark text for contrast on white */
+        }
+
+        /* Base transition for interactive cards/elements */
+        .feature-card {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hover effect for feature cards */
+        .feature-card:hover {
+            transform: translateY(-5px) scale(1.02); /* Slight lift and scale */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+            border-color: #E5E7EB; /* Lighter border color for consistency */
+        }
+
+        /* Gradient for connecting lines (if used, currently for conceptual sections) */
+        .connect-line {
+            background: linear-gradient(to right, #60A5FA, #3B82F6, #2563EB); /* Blue gradient */
+            height: 2px;
+        }
+
+        /* Background image and overlay for the 'Cosmic Alignment' section */
         .baobab-bg {
-            background-image: url('https://via.placeholder.com/1920x1080/0A0A0A/FFFFFF?text=Baobab+Network+Background'); /* Placeholder - Replace with actual Baobab/Cosmic image */
+            background-image: url('https://via.placeholder.com/1920x1080/0A0A0A/FFFFFF?text=Baobab+Network+Background'); /* Placeholder image */
             background-size: cover;
             background-position: center;
             position: relative;
             z-index: 0;
         }
+
+        /* Dark overlay for the background image to ensure text readability */
         .baobab-bg::before {
             content: '';
             position: absolute;
@@ -29,16 +61,22 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.7); /* Dark overlay retained for this section */
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay */
             z-index: 1;
         }
+
+        /* Ensures content layers are above the background image overlay */
         .content-z-2 > * {
             position: relative;
             z-index: 2;
         }
+
+        /* Default styling for dashboard navigation links */
         .dashboard-nav a {
             @apply text-gray-600 hover:text-gray-900 transition-colors duration-200 px-3 py-1 rounded-full text-sm font-medium;
         }
+
+        /* Active state styling for dashboard navigation links */
         .dashboard-nav .active {
             @apply bg-blue-600 text-white shadow-md;
         }
@@ -46,11 +84,13 @@
 </head>
 <body class="antialiased">
 
+    <!-- Header section with consistent branding and navigation -->
     <header class="py-4 px-8 bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <a href="index.html" class="text-2xl font-black text-gray-800 tracking-wider">
                 🌳 Baobab Security Network™
             </a>
+            <!-- Main navigation links -->
             <nav class="flex-grow flex justify-center md:justify-end space-x-4 md:space-x-6 text-sm font-medium dashboard-nav">
                 <a href="index.html#vision" class="text-gray-600 hover:text-gray-900 transition">Vision</a>
                 <a href="index.html#ai-core" class="text-gray-600 hover:text-gray-900 transition">AI Core</a>
@@ -60,13 +100,14 @@
                 <!-- Link to the main SPA dashboard -->
                 <a href="baobab_spa_dashboard.html" class="text-gray-600 hover:text-gray-900 transition">Global Dashboards 📊</a>
             </nav>
-            <!-- Button now links to the main SPA dashboard -->
+            <!-- Button to enter the main dashboard grid -->
             <button onclick="window.location.href='baobab_spa_dashboard.html'" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition shadow-lg mt-2 md:mt-0">
                 Enter The Grid 🌐
             </button>
         </div>
     </header>
 
+    <!-- Hero section: main title, description, and calls to action -->
     <section class="hero-section-new text-center py-20 md:py-32 px-6 relative overflow-hidden">
         <div class="relative z-10 max-w-4xl mx-auto">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight text-gray-900">
@@ -89,6 +130,7 @@
         </div>
     </section>
 
+    <!-- Vision section: explains the core inspiration and philosophy -->
     <section id="vision" class="py-20 px-6 bg-white">
         <div class="container mx-auto max-w-5xl text-center">
             <h2 class="text-4xl font-extrabold text-gray-800 mb-8">The Vision of Baobab Security™</h2>
@@ -105,6 +147,7 @@
         </div>
     </section>
 
+    <!-- AI Core section: details the role of AI in the network -->
     <section id="ai-core" class="py-20 px-6 bg-gray-100">
         <div class="container mx-auto max-w-5xl text-center">
             <h2 class="text-4xl font-extrabold text-gray-800 mb-8">Leveraging AI for Global Change™</h2>
@@ -134,6 +177,7 @@
         </div>
     </section>
 
+    <!-- Cosmic Alignment section: unique philosophical foundation -->
     <section id="cosmic-align" class="py-20 px-6 baobab-bg">
         <div class="content-z-2 container mx-auto max-w-5xl text-center">
             <h2 class="text-4xl font-extrabold text-emerald-400 mb-8">Aligning with the Stars™ ✨</h2>
@@ -161,6 +205,7 @@
         </div>
     </section>
 
+    <!-- Immediate Action section: practical applications of the network -->
     <section id="action" class="py-20 px-6 bg-white">
         <div class="container mx-auto max-w-5xl text-center">
             <h2 class="text-4xl font-extrabold text-gray-800 mb-8">Immediate Action for Environmental Protection™</h2>
@@ -188,6 +233,7 @@
         </div>
     </section>
 
+    <!-- Legacy section: the long-term commitment and philosophical roots -->
     <section id="legacy" class="py-20 px-6 bg-gradient-to-br from-blue-100 via-white to-green-100 text-center">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-4xl font-extrabold text-gray-800 mb-8">A Heartfelt Commitment™ to a Better World ❤️</h2>
@@ -205,6 +251,7 @@
         </div>
     </section>
 
+    <!-- Founder's Note section: personal reflection and dedication -->
     <section class="py-16 px-6 bg-white text-center text-gray-700 text-sm italic">
         <p class="max-w-3xl mx-auto">
             "Love to Rossouw, my only son and real creation. ❤️ There is only one God, and He has blessed us with the strength, the vision, and the purpose to create a better world. This journey is not mine alone—it is ours. 👨‍👦‍👦"
@@ -221,6 +268,7 @@
         <p class="mt-4 font-semibold text-gray-800">Here is the tree—this is my headquarters 📍, this is the first, and this is the seed 🌱.</p>
     </section>
 
+    <!-- Kruger Park section: an additional personal touch -->
     <section class="py-16 px-6 bg-gray-100 text-gray-700 text-center">
         <h3 class="text-3xl font-bold text-gray-800 mb-6">A Poignant Trip to the Kruger National Park 🦁🐘🦒</h3>
         <p class="max-w-3xl mx-auto leading-relaxed">
@@ -229,7 +277,7 @@
         <p class="mt-6 text-xs text-gray-600">By: John Bryant | Date: 05/07/2021</p>
     </section>
 
-    <!-- New section for the business package download -->
+    <!-- Business Package Download section -->
     <section class="py-16 px-6 bg-gray-100 text-center">
         <div class="container mx-auto max-w-2xl">
             <h2 class="text-3xl font-extrabold text-gray-800 mb-6">Download the Baobab Business Package™</h2>
@@ -245,6 +293,7 @@
         </div>
     </section>
 
+    <!-- Footer section -->
     <footer class="py-8 px-6 bg-gray-900 border-t border-gray-800 text-center text-sm text-gray-400">
         <p>&copy; 2025 Heyns Schoeman ™. All rights reserved.</p>
         <p class="mt-2">Founder | Fruitful Global™ | FAA ™ 🌍</p>
@@ -254,5 +303,4 @@
 
 </body>
 </html>
-
 
