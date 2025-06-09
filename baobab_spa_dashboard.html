@@ -204,7 +204,7 @@
                                     <p class="text-sm text-gray-600">Monitor soil erosion.</p>
                                 </a>
                                 <!-- New Overview button added here -->
-                                <a href="baobab_spa_dashboard.html" class="widget-card p-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition">
+                                <a href="index.html" class="widget-card p-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition">
                                     <span class="text-5xl mb-3">🌍</span>
                                     <h4 class="font-semibold text-lg text-gray-800">Overview</h4>
                                     <p class="text-sm text-gray-600">Back to the main summary.</p>
@@ -217,7 +217,7 @@
                         <!-- Existing Business Functions Section -->
                         <div class="mt-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
                             <h3 class="text-2xl font-bold text-gray-800 mb-4">Discover Our Business Functions & Services</h3>
-                            <p class="text-gray-600 mb-6 leading-relaxed">
+                            <p class="mt-4 text-gray-600 leading-relaxed">
                                 Beyond data insights, The Baobab Security Network offers comprehensive solutions tailored to your organization's needs. Explore our services, pricing models, and partnership opportunities.
                             </p>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -660,7 +660,6 @@ function getRecyclingRateDistributionData(data) {
     return {
         labels: Object.keys(bins),
         datasets: [{
-            label: 'Recycling Rate Distribution',
             data: Object.values(bins),
             backgroundColor: ['#EF4444', '#F97316', '#FBBF24', '#10B981'],
         }]
