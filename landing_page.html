@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌳 The Baobab Security Network™ - Global Protection & Empowerment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; }
+        .hero-gradient { background: linear-gradient(135deg, #1A202C 0%, #000000 50%, #1A202C 100%); }
+        .glow-icon { filter: drop-shadow(0 0 8px rgba(167, 243, 208, 0.6)); } /* Emerald-200 glow for earthly feel */
+        .feature-card { transition: all 0.3s ease-in-out; }
+        .feature-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); border-color: #047857; } /* Emerald-700 */
+        .connect-line { background: linear-gradient(to right, #34D399, #059669, #065F46); height: 2px; } /* Emerald gradient */
+        .baobab-bg {
+            background-image: url('https://via.placeholder.com/1920x1080/0A0A0A/FFFFFF?text=Baobab+Network+Background'); /* Placeholder - Replace with actual Baobab/Cosmic image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 0;
+        }
+        .baobab-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            z-index: 1;
+        }
+        .content-z-2 > * {
+            position: relative;
+            z-index: 2;
+        }
+        .dashboard-nav a {
+            @apply text-gray-300 hover:text-white transition-colors duration-200 px-3 py-1 rounded-full text-sm font-medium;
+        }
+        .dashboard-nav .active {
+            @apply bg-emerald-700 text-white shadow-md;
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+    <header class="py-4 px-8 bg-gray-900 bg-opacity-80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+            <a href="baobab-security-network-v2.html" class="text-2xl font-black text-emerald-500 tracking-wider">
+                🌳 Baobab Security Network™
+            </a>
+            <nav class="flex-grow flex justify-center md:justify-end space-x-4 md:space-x-6 text-sm font-medium">
+                <a href="baobab-security-network-v2.html#vision" class="text-gray-300 hover:text-white transition">Vision</a>
+                <a href="baobab-security-network-v2.html#ai-core" class="text-gray-300 hover:text-white transition">AI Core</a>
+                <a href="baobab-security-network-v2.html#cosmic-align" class="text-gray-300 hover:text-white transition">Cosmic Alignment</a>
+                <a href="baobab-security-network-v2.html#action" class="text-gray-300 hover:text-white transition">Immediate Action</a>
+                <a href="baobab-security-network-v2.html#legacy" class="text-gray-300 hover:text-white transition">Our Legacy</a>
+                <!-- New link to the first dashboard page -->
+                <a href="dashboard_deforestation-v2.html" class="text-gray-300 hover:text-white transition">Dashboards 📊</a>
+            </nav>
+            <!-- Button now links to the first dashboard -->
+            <button onclick="window.location.href='dashboard_deforestation-v2.html'" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-full transition shadow-lg mt-2 md:mt-0">
+                Enter The Grid 🌐
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-gradient text-center py-20 md:py-32 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://via.placeholder.com/1920x1080/0D0D0D/FFFFFF?text=Cosmic+Network');"></div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight text-white glow-icon">
+                Empower. Protect. Sustain. <br>The Baobab Security Network™
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto opacity-90">
+                A living blueprint for a better future, integrating AI ✨, geospatial mapping 🗺️, and natural resource management 🌳 to empower communities and preserve ecosystems.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#vision" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                    Discover Our Vision 🔭
+                </a>
+                <a href="#action" class="border border-white hover:bg-white hover:text-black text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                    See Impact Today 🛡️
+                </a>
+            </div>
+            <p class="mt-12 text-sm text-gray-500">
+                Aligning the roots of nature with the stars above ✨.
+            </p>
+        </div>
+    </section>
+
+    <section id="vision" class="py-20 px-6 bg-black">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-4xl font-extrabold text-emerald-400 mb-8">The Vision of Baobab Security™</h2>
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                Just like the resilient Baobab 🌳 provides vital resources, its data 📊 and natural patterns 🌿 unlock a global framework for sustainability, economic growth, and environmental resilience.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                This network is more than protection; it's a profound step toward humanity's harmonious coexistence with nature, empowering the vulnerable through cosmic connections ✨ and a web spanning the world 🌐.
+            </p>
+            <div class="mt-12">
+                <span class="text-xl font-semibold text-gray-400">Timestamped Finding 1™: Global Baobab Network™</span><br>
+                <span class="text-sm text-gray-500">Date: 27 Feb 2025, 16:14, Pretoria, South Africa</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-core" class="py-20 px-6 bg-gray-950">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-4xl font-extrabold text-stone-400 mb-8">Leveraging AI for Global Change™</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center text-left">
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        At its core, AI 🧠 transforms data into meaningful action. By aligning Baobab ecosystems 🌳 with cosmic data ✨ and natural resources 🌿, AI models optimize energy consumption ⚡, data flow 📊, and resource management.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        This dynamic system continuously adjusts to global changes, ensuring every part of the world benefits from efficient, sustainable, and equitable resource management. Local economies 💰 and global resources 🌍 are managed sustainably.
+                    </p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div class="w-full h-auto bg-gray-800 rounded-lg p-6 shadow-xl border border-stone-700">
+                        <h3 class="text-2xl font-bold text-stone-300 mb-4">AI-Powered Sustainability™</h3>
+                        <ul class="space-y-3 text-gray-300 text-base list-disc list-inside">
+                            <li>Real-time mapping & energy optimization 💡</li>
+                            <li>Eco-friendly infrastructure management ⚙️</li>
+                            <li>Systems adjust to regional needs ✅</li>
+                        </ul>
+                        <div class="mt-6 text-sm text-gray-500">
+                            Timestamped Finding 2™: 27 Feb 2025, 16:14, Pretoria, South Africa
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cosmic-align" class="py-20 px-6 baobab-bg">
+        <div class="content-z-2 container mx-auto max-w-5xl text-center">
+            <h2 class="text-4xl font-extrabold text-lime-400 mb-8">Aligning with the Stars™ ✨</h2>
+            <p class="text-lg text-gray-200 leading-relaxed mb-8">
+                This profound alignment weaves a web 🌐, much like the roots of the Baobab™ 🌳, spanning regions and tying together natural rhythms with geospatial mapping.
+            </p>
+            <div class="grid md:grid-cols-2 gap-12 text-left">
+                <div class="bg-gray-900 p-8 rounded-xl shadow-2xl border border-lime-700">
+                    <h3 class="text-2xl font-bold text-lime-300 mb-4">Stars as Navigation Points 🔭</h3>
+                    <p class="text-gray-300 text-base">
+                        The celestial movements serve as a guiding system, mapping energy flows ⚡, resource availability 🍎, and global connections 🤝.
+                    </p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-xl shadow-2xl border border-lime-700">
+                    <h3 class="text-2xl font-bold text-lime-300 mb-4">Root-System Simulation 🌳</h3>
+                    <p class="text-gray-300 text-base">
+                        Digitally represented by AI models, the Baobab root system creates a network interconnecting regions, empowering high-density, low-economy areas 💸 with sustainable resources and technological advancement.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12">
+                <span class="text-xl font-semibold text-gray-400">Timestamped Finding 3™: Cosmic Alignment and Global Solutions™</span><br>
+                <span class="text-sm text-gray-500">Date: 27 Feb 2025, 16:14, Pretoria, South Africa</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="action" class="py-20 px-6 bg-black">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-4xl font-extrabold text-rose-400 mb-8">Immediate Action for Environmental Protection™</h2>
+            <p class="text-lg text-gray-300 leading-relaxed mb-10">
+                The Baobab Security Network™ empowers real-time intervention for urgent environmental issues.
+            </p>
+            <div class="grid md:grid-cols-2 gap-12 text-left">
+                <div class="bg-gray-900 p-8 rounded-xl shadow-2xl border border-rose-700">
+                    <h3 class="text-2xl font-bold text-rose-300 mb-4">Ocean Plastic Cleanup 🗑️</h3>
+                    <p class="text-gray-300 text-base">
+                        AI models pinpoint plastic pollution hotspots 🌊 in the ocean, coordinating cleanup operations and supporting recycling in low-economy areas.
+                    </p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-xl shadow-2xl border border-rose-700">
+                    <h3 class="text-2xl font-bold text-rose-300 mb-4">Wildlife Protection 🦁</h3>
+                    <p class="text-gray-300 text-base">
+                        AI detection systems identify illegal hunting activities (e.g., whale 🐋 and dolphin 🐬 hunting), deploying AI-powered signal disruption to shut down illegal boats 🚤.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12">
+                <span class="text-xl font-semibold text-gray-400">Timestamped Finding 4™: Real-time Interventions™</span><br>
+                <span class="text-sm text-gray-500">Date: 27 Feb 2025, 16:14, Pretoria, South Africa</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="legacy" class="py-20 px-6 bg-gradient-to-br from-emerald-900 via-black to-slate-950 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-extrabold text-amber-300 mb-8">A Heartfelt Commitment™ to a Better World ❤️</h2>
+            <p class="text-lg text-gray-200 leading-relaxed mb-6">
+                This network, crafted with love, faith, and imagination, will protect, nurture, and empower all of humanity 🌍. Like a mother knitting a sweater for her son, it will bring warmth, love, and care to our planet ✨.
+            </p>
+            <p class="text-lg text-gray-200 leading-relaxed mb-10">
+                A legacy built on determination. A commitment to the planet 🌳, to future generations 👶, and to the universe itself 🌌.
+            </p>
+            <a href="#" class="text-emerald-300 hover:text-white transition font-semibold text-xl block mb-4">
+                "Sustain. Protect. Empower."
+            </a>
+            <p class="text-sm text-gray-500">Galactic Language: �������� �������� ⟁e↯∞Θ TM</p>
+            <p class="mt-8 text-xs text-gray-600">©2025 Heyns Schoeman ™ . All rights reserved.</p>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 bg-black text-center text-gray-400 text-sm italic">
+        <p class="max-w-3xl mx-auto">
+            "Love to Rossouw, my only son and real creation. ❤️ There is only one God, and He has blessed us with the strength, the vision, and the purpose to create a better world. This journey is not mine alone—it is ours. 👨‍👦‍👦"
+        </p>
+        <p class="mt-4 text-xs">Timestamp: 27 Feb 2025, 16:14, Pretoria, South Africa.</p>
+        <p class="mt-8 font-semibold text-white">The Tree 🌳, The Seed 🌱, The Future 🚀</p>
+        <p class="mt-2 max-w-2xl mx-auto">
+            I dedicate this moment to the Baobab™ tree, the seed of my vision, and to the future we are building. It’s not just about trees, it’s about connecting people, preserving nature, and ensuring that we leave a legacy of balance and empowerment for the generations to come.
+        </p>
+        <p class="mt-4 font-bold text-lg text-amber-400">In His Name We Trust: The Baobab™ Tree 🌳</p>
+        <p class="mt-2 text-xs max-w-xl mx-auto">
+            Allocate this Baobab™ tree 🌳 as the God-given seed that I admire, marking the revelation that unfolded in my life around 7th August 2021. After admiring this tree, God revealed everything to me, watering the seed He had planted in my heart. In His name we trust, and we are deeply thankful to the Almighty God 🙏 for the vision and the ability to nearly breathe with clarity.
+        </p>
+        <p class="mt-4 font-semibold text-white">Here is the tree—this is my headquarters 📍, this is the first, and this is the seed 🌱.</p>
+    </section>
+
+    <section class="py-16 px-6 bg-gray-950 text-gray-300 text-center">
+        <h3 class="text-3xl font-bold text-gray-400 mb-6">A Poignant Trip to the Kruger National Park 🦁🐘🦒</h3>
+        <p class="max-w-3xl mx-auto leading-relaxed">
+            Reflecting on 70 visits, and the deep connection to nature. The park's evolution, the search for solitude amidst discovery. The Northern region's unique charm, now found by many. Yet, the core tranquility remains, a reminder of the quiet, enduring spirit of the wild.
+        </p>
+        <p class="mt-6 text-xs text-gray-500">By: John Bryant | Date: 05/07/2021</p>
+    </section>
+
+    <!-- New section for the business package download -->
+    <section class="py-16 px-6 bg-gray-900 text-center">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-3xl font-extrabold text-emerald-400 mb-6">Download the Baobab Business Package™</h2>
+            <p class="text-lg text-gray-300 mb-8">
+                Access the conceptual framework and code for building out your own Baobab-inspired solutions.
+            </p>
+            <a href="generate_zip.py" download="baobab_business_package.py" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                Download Business Package <span class="ml-2">⬇️</span>
+            </a>
+            <p class="mt-6 text-sm text-gray-500">
+                This download provides a Python script to bundle the web assets, along with a `README.md` explaining the conceptual business application.
+            </p>
+        </div>
+    </section>
+
+    <footer class="py-8 px-6 bg-black border-t border-gray-800 text-center text-sm text-gray-600">
+        <p>&copy; 2025 Heyns Schoeman ™. All rights reserved.</p>
+        <p class="mt-2">Founder | Fruitful Global™ | FAA ™ 🌍</p>
+        <p class="mt-1">AI-Powered Interplanetary Security | "Sustain. Protect. Empower."</p>
+        <p class="mt-1">Water the Seed™ | Baobab™ Security | AI-Powered Global Expansion</p>
+    </footer>
+
+</body>
+</html>
