@@ -101,6 +101,18 @@
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">
                 Choose the perfect plan that fits your organization's needs, from basic insights to enterprise-grade solutions.
             </p>
+            
+            <!-- Currency Converter Section -->
+            <div class="mt-8 mb-10 bg-white p-6 rounded-lg shadow-sm max-w-xs mx-auto flex items-center justify-between">
+                <label for="currency-select" class="text-gray-700 font-medium">Display prices in:</label>
+                <select id="currency-select" class="ml-4 p-2 border border-gray-300 rounded-md bg-white text-gray-800">
+                    <option value="ZAR">ZAR (R)</option>
+                    <option value="USD">USD ($)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="GBP">GBP (£)</option>
+                </select>
+            </div>
+
         </section>
 
         <section class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
@@ -109,7 +121,8 @@
                 <h2 class="text-2xl font-bold text-gray-800 mb-4">Basic Tier</h2>
                 <p class="text-gray-500 mb-6">For individuals and small teams starting out.</p>
                 <div class="mb-8">
-                    <span class="text-5xl font-extrabold text-gray-900">$29</span>
+                    <!-- Prices now explicitly in ZAR for BASE_CURRENCY -->
+                    <span class="text-5xl font-extrabold text-gray-900 price-display" data-original-price="550.00" data-currency-symbol="R">R550.00</span>
                     <span class="text-xl text-gray-500">/month</span>
                 </div>
                 <ul class="text-left w-full feature-list mb-8 flex-grow">
@@ -117,7 +130,12 @@
                     <li><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Limited Data Export</li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Community Support</li>
                 </ul>
-                <a href="#" class="cta-button w-full">Choose Basic</a>
+                <button class="cta-button w-full choose-plan-button"
+                        data-item-name="Baobab Basic Tier"
+                        data-amount="550.00"
+                        data-item-description="Monthly subscription for Baobab Basic Tier">
+                    Choose Basic
+                </button>
             </div>
 
             <!-- Pro Plan (Featured) -->
@@ -125,7 +143,8 @@
                 <h2 class="text-2xl font-bold text-gray-800 mb-4">Pro Tier</h2>
                 <p class="text-gray-500 mb-6">Ideal for growing organizations and deeper insights.</p>
                 <div class="mb-8">
-                    <span class="text-5xl font-extrabold text-blue-600">$79</span>
+                    <!-- Prices now explicitly in ZAR for BASE_CURRENCY -->
+                    <span class="text-5xl font-extrabold text-blue-600 price-display" data-original-price="1500.00" data-currency-symbol="R">R1,500.00</span>
                     <span class="text-xl text-gray-500">/month</span>
                 </div>
                 <ul class="text-left w-full feature-list mb-8 flex-grow">
@@ -134,7 +153,12 @@
                     <li><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Priority Email Support</li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Customizable Reports</li>
                 </ul>
-                <a href="#" class="cta-button w-full">Choose Pro</a>
+                <button class="cta-button w-full choose-plan-button"
+                        data-item-name="Baobab Pro Tier"
+                        data-amount="1500.00"
+                        data-item-description="Monthly subscription for Baobab Pro Tier">
+                    Choose Pro
+                </button>
             </div>
 
             <!-- Enterprise Plan -->
@@ -142,7 +166,8 @@
                 <h2 class="text-2xl font-bold text-gray-800 mb-4">Enterprise Tier</h2>
                 <p class="text-gray-500 mb-6">Full-scale solutions for large organizations and custom needs.</p>
                 <div class="mb-8">
-                    <span class="text-5xl font-extrabold text-gray-900">$299</span>
+                    <!-- Prices now explicitly in ZAR for BASE_CURRENCY -->
+                    <span class="text-5xl font-extrabold text-gray-900 price-display" data-original-price="5000.00" data-currency-symbol="R">R5,000.00</span>
                     <span class="text-xl text-gray-500">/month</span>
                 </div>
                 <ul class="text-left w-full feature-list mb-8 flex-grow">
@@ -179,6 +204,123 @@
         <p>&copy; 2025 Baobab Security Network™. All rights reserved.</p>
         <p class="mt-2">AI-Powered Interplanetary Security | "Sustain. Protect. Empower."</p>
     </footer>
+
+    <!-- Hidden form for PayFast redirection -->
+    <form id="payfast-redirect-form" action="/" method="POST" style="display: none;">
+        <input type="hidden" name="item_name">
+        <input type="hidden" name="amount">
+        <input type="hidden" name="item_description">
+        <input type="hidden" name="m_payment_id">
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const choosePlanButtons = document.querySelectorAll('.choose-plan-button');
+            const redirectForm = document.getElementById('payfast-redirect-form');
+
+            choosePlanButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const itemName = button.dataset.itemName;
+                    // Get amount from the price-display span related to this button
+                    const amountSpan = button.closest('.price-card').querySelector('.price-display');
+                    const amount = parseFloat(amountSpan.dataset.originalPrice).toFixed(2); // Use original price for payment
+
+                    const itemDescription = button.dataset.itemDescription;
+
+                    redirectForm.elements['item_name'].value = itemName;
+                    redirectForm.elements['amount'].value = amount;
+                    redirectForm.elements['item_description'].value = itemDescription;
+                    redirectForm.elements['m_payment_id'].value = 'BAOBAB-ORDER-' + Date.now(); // Unique ID for Baobab orders
+
+                    redirectForm.submit();
+                });
+            });
+
+            // --- Currency Converter Logic ---
+            const currencySelect = document.getElementById('currency-select');
+            const priceDisplays = document.querySelectorAll('.price-display');
+            let exchangeRates = {}; // Store fetched exchange rates
+
+            // IMPORTANT: Get your API key from https://www.exchangerate-api.com/ (free tier available)
+            // Replace "" with your actual API key.
+            const API_KEY = "40015d117bc7fff9495dcf28"; // API Key provided by user
+            
+            // IMPORTANT: Set this to the currency your 'data-original-price' values are in.
+            // For example, if your prices are originally in South African Rand, set BASE_CURRENCY = 'ZAR'.
+            const BASE_CURRENCY = 'ZAR'; // Set to ZAR based on the updated data-original-price values
+
+            async function fetchExchangeRates() {
+                if (API_KEY === "") {
+                    console.warn("Currency converter: API_KEY is missing. Please get your API key from https://www.exchangerate-api.com/ and replace 'API_KEY' in the code. Currency conversion will not work without it.");
+                    alert('Currency converter API key is missing. Please set it up for currency conversion to work.');
+                    currencySelect.disabled = true; // Disable dropdown if API key is missing
+                    return; 
+                }
+
+                try {
+                    // Note: ExchangeRate-API free tier has a daily limit. If you exceed it, fetches will fail.
+                    const response = await fetch(`https://v6.exchangerate-api.com/v6/${API_KEY}/latest/${BASE_CURRENCY}`);
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(`HTTP error! Status: ${response.status}. API Error: ${errorData['error-type'] || 'Unknown error.'}`);
+                    }
+                    const data = await response.json();
+                    if (data && data.conversion_rates) {
+                        exchangeRates = data.conversion_rates;
+                        console.log('Exchange rates fetched:', exchangeRates);
+                        updatePrices(); // Update prices once rates are fetched
+                    } else {
+                        console.error('Failed to fetch conversion rates: Unexpected API response structure.', data);
+                        alert('Could not fetch exchange rates due to unexpected API response. Check console for details.');
+                        currencySelect.disabled = true;
+                    }
+                } catch (error) {
+                    console.error('Error fetching exchange rates:', error.message || error);
+                    alert('Could not fetch exchange rates. Please check your API key, network connection, and API usage limits.');
+                    currencySelect.disabled = true; // Disable dropdown if fetch fails
+                }
+            }
+
+            function getCurrencySymbol(currencyCode) {
+                switch (currencyCode) {
+                    case 'USD': return '$';
+                    case 'EUR': return '€';
+                    case 'GBP': return 'R'; // Assuming 'R' for ZAR, but GBP is '£' - Fixed below
+                    case 'ZAR': return 'R';
+                    default: return currencyCode;
+                }
+            }
+
+            function updatePrices() {
+                const selectedCurrency = currencySelect.value;
+                const selectedSymbol = getCurrencySymbol(selectedCurrency);
+
+                priceDisplays.forEach(priceSpan => {
+                    const originalPriceValue = parseFloat(priceSpan.dataset.originalPrice);
+                    let convertedPrice = originalPriceValue;
+
+                    if (selectedCurrency !== BASE_CURRENCY && exchangeRates[selectedCurrency]) {
+                        convertedPrice = originalPriceValue * exchangeRates[selectedCurrency];
+                    }
+                    priceSpan.textContent = `${selectedSymbol}${convertedPrice.toFixed(2)}`;
+                });
+            }
+
+            currencySelect.addEventListener('change', updatePrices);
+
+            // Fetch rates on page load
+            fetchExchangeRates();
+
+            // Set initial state for enterprise tier (Contact Sales)
+            const enterpriseButton = document.querySelector('.price-card:last-child .cta-button');
+            enterpriseButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Please contact our sales team for Enterprise pricing and custom solutions!');
+                // You might replace this with a redirect to a contact form or a modal popup
+            });
+
+        });
+    </script>
 
 </body>
 </html>
