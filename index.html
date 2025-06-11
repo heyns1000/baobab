@@ -9,33 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        /* Corporate-focused color palette and base styles (Brown/Black/Subtle Gold) */
+        /* Corporate-focused color palette and base styles (Black/Gray/Subtle Gold) */
         body {
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             overflow-x: hidden;
-            background-color: #F8F8F8; /* Very light gray/off-white */
-            color: #333333; /* Dark charcoal */
+            background-color: #F8F8F8; /* Very light gray/off-white, consistent light background */
+            color: #333333; /* Dark charcoal for primary text */
             line-height: 1.6;
         }
 
-        /* Header specific styling */
+        /* Header specific styling - World-Class Navigation */
         .header-bg {
-            background-color: #1A1A1A; /* Deep Black */
+            background-color: #1A1A1A; /* Deep Black for header */
             border-bottom: 1px solid #4A4A4A; /* Darker gray for subtle separator */
         }
         .header-nav a {
-            /* Ensured navigation text is white using direct CSS property */
-            color: white;
-            @apply hover:text-yellow-500 transition-colors duration-200 font-medium;
+            color: white; /* Default nav text is white for contrast on dark header */
+            @apply hover:text-yellow-500 transition-colors duration-200 font-medium; /* Gold hover for nav links */
         }
         .header-nav a.active {
-            @apply text-yellow-500 font-semibold; /* Subtle gold accent for active state */
+            @apply text-yellow-500 font-semibold; /* Subtle gold accent for active state in nav */
         }
-        /* Logo text color */
         .header-logo-text {
-            color: #B8860B; /* DarkGoldenrod - corporate gold */
+            color: #B8860B; /* DarkGoldenrod - corporate gold for logo */
         }
 
         /* Hero section styling */
@@ -44,13 +42,13 @@
             color: #EAEAEA; /* Light text on dark background */
         }
         .hero-title {
-            color: #F8F8F8; /* White/off-white for main headings */
+            color: #F8F8F8; /* White/off-white for main headings in hero */
         }
         .hero-subtitle {
-            color: #CCCCCC; /* Lighter gray for subtext */
+            color: #CCCCCC; /* Lighter gray for subtext in hero */
         }
 
-        /* CTA buttons */
+        /* CTA buttons - Primary (Gold) and Secondary (Dark Gray Border) */
         .cta-primary {
             @apply bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105; /* Gold buttons */
         }
@@ -58,15 +56,15 @@
             @apply border border-gray-500 hover:bg-gray-700 hover:text-white text-gray-300 font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105; /* Darker border, subtle hover */
         }
 
-        /* Section headings and body text */
+        /* Section headings and body text - Consistent dark tones on light backgrounds */
         .section-heading {
-            color: #1A1A1A; /* Deep Black for headings */
+            color: #1A1A1A; /* Deep Black for main section headings */
         }
         .section-text {
-            color: #4A4A4A; /* Dark gray for section body */
+            color: #4A4A4A; /* Dark gray for section body text */
         }
 
-        /* Card styling for content blocks */
+        /* Card styling for content blocks (e.g., within Solutions) */
         .content-card {
             background-color: #FFFFFF; /* White cards on light background */
             border-radius: 0.75rem;
@@ -75,13 +73,13 @@
             padding: 2rem;
         }
         .content-card-title {
-            color: #1F2937;
+            color: #1F2937; /* Dark blue-gray for card titles */
         }
         .content-card-text {
-            color: #4B5563;
+            color: #4B5563; /* Medium gray for card body text */
         }
 
-        /* Background image with subtle overlay for visual sections */
+        /* Background image with subtle overlay for visual sections (e.g., Methodology) */
         .strategic-bg {
             background-image: url('https://placehold.co/1920x1080/4A4A4A/F8F8F8?text=Strategic+Network+Background'); /* Darker corporate visual placeholder */
             background-size: cover;
@@ -106,10 +104,10 @@
         }
         .strategic-card-bg {
             background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for cards on dark bg */
-            color: #333333;
+            color: #333333; /* Dark text for cards on dark background */
         }
 
-        /* Footer styling */
+        /* Footer styling - Deep Black and subtle gray text */
         .footer-bg {
             background-color: #1A1A1A; /* Deep Black footer */
             color: #9CA3AF; /* Light Gray - subtle footer text */
@@ -128,19 +126,20 @@
             <a href="index.html" class="text-2xl font-black header-logo-text tracking-wider">
                 🌳 Baobab Security Network™
             </a>
-            <!-- Main navigation links -->
+            <!-- Main navigation links - World-Class Navigation -->
             <nav class="flex-grow flex justify-center md:justify-end space-x-4 md:space-x-6 text-sm header-nav">
                 <a href="index.html#vision" class="active">Vision</a>
                 <a href="index.html#solutions">Solutions</a>
                 <a href="index.html#methodology">Methodology</a>
                 <a href="index.html#commitment">Commitment</a>
+                <!-- Corrected route: Global Dashboards links to baobab_spa_dashboard.html -->
                 <a href="baobab_spa_dashboard.html">Global Dashboards 📊</a>
                 <a href="eskom_crisis_dashboard.html">Eskom Crisis 🔌</a>
                 <a href="pricing.html">Pricing 💲</a>
                 <a href="about_us.html">About Us ℹ️</a>
                 <a href="contact.html">Contact Us 📧</a>
             </nav>
-            <!-- Button to explore dashboards -->
+            <!-- Button to explore dashboards - Corrected Route -->
             <button onclick="window.location.href='baobab_spa_dashboard.html'" class="cta-primary text-white mt-2 md:mt-0">
                 Explore Platform 🌐
             </button>
@@ -157,6 +156,7 @@
                 A dynamic platform integrating advanced AI, comprehensive geospatial data, and strategic resource management to deliver actionable intelligence for corporate, governmental, and humanitarian initiatives.
             </p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <!-- Corrected route: View Global Dashboards links to baobab_spa_dashboard.html -->
                 <a href="baobab_spa_dashboard.html" class="cta-primary">
                     View Global Dashboards 📊
                 </a>
@@ -279,8 +279,8 @@
     <!-- Footer section -->
     <footer class="py-8 px-6 footer-bg text-center text-sm">
         <p>&copy; 2025 Heyns Schoeman ™ . All Rights Reserved.</p>
-        <p class="mt-2 text-footer-secondary">Founder | Fruitful Global™ | FAA ™</p>
-        <p class="mt-1 text-footer-secondary">AI-Powered Global Solutions | "Empower. Protect. Sustain."</p>
+        <p class="mt-2 footer-text-secondary">Founder | Fruitful Global™ | FAA ™</p>
+        <p class="mt-1 footer-text-secondary">AI-Powered Global Solutions | "Empower. Protect. Sustain."</p>
     </footer>
 
 </body>
