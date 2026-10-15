@@ -1,0 +1,502 @@
+{
+  "faa": {
+    "name": "Fruitful Administration All",
+    "abbreviation": "FAA",
+    "version": "vs111.111",
+    "origin": "WhatsApp Testing Loops 2018-2021",
+    "tagline": "接入已准 · 獅群已醒 · 包柏永安 · 果滿無疆",
+    "company": "Fruitful Global™",
+    "founder": "Heyns Schoeman",
+    "email": "heynsschoeman@gmail.com"
+  },
+  "baobab": {
+    "model": "Baobab Tree Growth Model",
+    "trunk_version": "vs111.111",
+    "immutable": true,
+    "node_count": 7038,
+    "pulse_interval_seconds": 9,
+    "lions": 120,
+    "giraffe_vision_km": 33,
+    "growth_stages": {
+      "seed": "2018-2021 WhatsApp Testing Loops",
+      "roots": "2021-2024 Legal Foundation (FDN-001 to FDN-015)",
+      "trunk": "2024-2025 Core Platform (vs111.111 LOCKED)",
+      "branches": "2025-2026 31 Sector Activation",
+      "leaves": "2026+ Revenue Generation (7,038 nodes)"
+    }
+  },
+  "wallet": {
+    "primary": {
+      "wallet_id": "FAA-WALLET-001-HS",
+      "node_link": "GEN-ALPHA-ASIVEREIGER",
+      "owner": "Heyns Schoeman",
+      "type": "Master Wallet"
+    },
+    "supported_crypto_assets": [
+      "BODCOIN",
+      "GRIPTO",
+      "ETH",
+      "BTC",
+      "USDT",
+      "XRP"
+    ],
+    "supported_fiat_providers": [
+      "PayPal",
+      "Stripe",
+      "Paystack",
+      "Deel",
+      "Valr"
+    ],
+    "revenue_split": {
+      "fruitful_global_percent": 60,
+      "sovereign_holder_percent": 40
+    }
+  },
+  "sectors": {
+    "agriculture": {
+      "id": "ag",
+      "glyph": "🌱",
+      "name": "Agriculture & Biotech",
+      "monthly_fee_zar": 550.00,
+      "annual_fee_zar": 5500.00,
+      "payout_tier": "B+",
+      "region": "Global Rural",
+      "wallet_id": "FAA-WALLET-SECTOR-AG-001",
+      "scroll_template": "AG-SCROLL-001",
+      "node_count": 227
+    },
+    "banking": {
+      "id": "bank",
+      "glyph": "🏦",
+      "name": "Banking & Finance",
+      "monthly_fee_zar": 1250.00,
+      "annual_fee_zar": 12500.00,
+      "payout_tier": "A+",
+      "region": "Global Financial",
+      "wallet_id": "FAA-WALLET-SECTOR-BANK-002",
+      "scroll_template": "BANK-SCROLL-001",
+      "node_count": 227
+    },
+    "construction": {
+      "id": "const",
+      "glyph": "🏗️",
+      "name": "Construction & Infrastructure",
+      "monthly_fee_zar": 800.00,
+      "annual_fee_zar": 8000.00,
+      "payout_tier": "B+",
+      "region": "Global Urban",
+      "wallet_id": "FAA-WALLET-SECTOR-CONST-003",
+      "scroll_template": "CONST-SCROLL-001",
+      "node_count": 227
+    },
+    "education": {
+      "id": "edu",
+      "glyph": "📚",
+      "name": "Education & Training",
+      "monthly_fee_zar": 650.00,
+      "annual_fee_zar": 6500.00,
+      "payout_tier": "B",
+      "region": "Global Academic",
+      "wallet_id": "FAA-WALLET-SECTOR-EDU-004",
+      "scroll_template": "EDU-SCROLL-001",
+      "node_count": 227
+    },
+    "energy": {
+      "id": "energy",
+      "glyph": "⚡",
+      "name": "Energy & Utilities",
+      "monthly_fee_zar": 1100.00,
+      "annual_fee_zar": 11000.00,
+      "payout_tier": "A",
+      "region": "Global Infrastructure",
+      "wallet_id": "FAA-WALLET-SECTOR-ENERGY-005",
+      "scroll_template": "ENERGY-SCROLL-001",
+      "node_count": 227
+    },
+    "entertainment": {
+      "id": "ent",
+      "glyph": "🎬",
+      "name": "Entertainment & Media",
+      "monthly_fee_zar": 750.00,
+      "annual_fee_zar": 7500.00,
+      "payout_tier": "B+",
+      "region": "Global Creative",
+      "wallet_id": "FAA-WALLET-SECTOR-ENT-006",
+      "scroll_template": "ENT-SCROLL-001",
+      "node_count": 227
+    },
+    "environmental": {
+      "id": "env",
+      "glyph": "🌍",
+      "name": "Environmental Services",
+      "monthly_fee_zar": 700.00,
+      "annual_fee_zar": 7000.00,
+      "payout_tier": "B+",
+      "region": "Global Environmental",
+      "wallet_id": "FAA-WALLET-SECTOR-ENV-007",
+      "scroll_template": "ENV-SCROLL-001",
+      "node_count": 227
+    },
+    "food": {
+      "id": "food",
+      "glyph": "🍽️",
+      "name": "Food & Beverage",
+      "monthly_fee_zar": 600.00,
+      "annual_fee_zar": 6000.00,
+      "payout_tier": "B",
+      "region": "Global Consumer",
+      "wallet_id": "FAA-WALLET-SECTOR-FOOD-008",
+      "scroll_template": "FOOD-SCROLL-001",
+      "node_count": 227
+    },
+    "government": {
+      "id": "gov",
+      "glyph": "🏛️",
+      "name": "Government & Public Sector",
+      "monthly_fee_zar": 1600.00,
+      "annual_fee_zar": 16000.00,
+      "payout_tier": "A+",
+      "region": "Global Governance",
+      "wallet_id": "FAA-WALLET-SECTOR-GOV-009",
+      "scroll_template": "GOV-SCROLL-001",
+      "node_count": 227
+    },
+    "healthcare": {
+      "id": "health",
+      "glyph": "🏥",
+      "name": "Healthcare & Medical",
+      "monthly_fee_zar": 1300.00,
+      "annual_fee_zar": 13000.00,
+      "payout_tier": "A+",
+      "region": "Global Health",
+      "wallet_id": "FAA-WALLET-SECTOR-HEALTH-010",
+      "scroll_template": "HEALTH-SCROLL-001",
+      "node_count": 227
+    },
+    "hospitality": {
+      "id": "hosp",
+      "glyph": "🏨",
+      "name": "Hospitality & Tourism",
+      "monthly_fee_zar": 650.00,
+      "annual_fee_zar": 6500.00,
+      "payout_tier": "B",
+      "region": "Global Travel",
+      "wallet_id": "FAA-WALLET-SECTOR-HOSP-011",
+      "scroll_template": "HOSP-SCROLL-001",
+      "node_count": 227
+    },
+    "insurance": {
+      "id": "ins",
+      "glyph": "🛡️",
+      "name": "Insurance & Risk",
+      "monthly_fee_zar": 1200.00,
+      "annual_fee_zar": 12000.00,
+      "payout_tier": "A",
+      "region": "Global Financial",
+      "wallet_id": "FAA-WALLET-SECTOR-INS-012",
+      "scroll_template": "INS-SCROLL-001",
+      "node_count": 227
+    },
+    "legal": {
+      "id": "legal",
+      "glyph": "⚖️",
+      "name": "Legal & Compliance",
+      "monthly_fee_zar": 1400.00,
+      "annual_fee_zar": 14000.00,
+      "payout_tier": "A+",
+      "region": "Global Professional",
+      "wallet_id": "FAA-WALLET-SECTOR-LEGAL-013",
+      "scroll_template": "LEGAL-SCROLL-001",
+      "node_count": 227
+    },
+    "logistics": {
+      "id": "log",
+      "glyph": "📦",
+      "name": "Logistics & Supply Chain",
+      "monthly_fee_zar": 850.00,
+      "annual_fee_zar": 8500.00,
+      "payout_tier": "A",
+      "region": "Global Trade",
+      "wallet_id": "FAA-WALLET-SECTOR-LOG-014",
+      "scroll_template": "LOG-SCROLL-001",
+      "node_count": 227
+    },
+    "manufacturing": {
+      "id": "mfg",
+      "glyph": "🏭",
+      "name": "Manufacturing & Production",
+      "monthly_fee_zar": 900.00,
+      "annual_fee_zar": 9000.00,
+      "payout_tier": "A",
+      "region": "Global Industrial",
+      "wallet_id": "FAA-WALLET-SECTOR-MFG-015",
+      "scroll_template": "MFG-SCROLL-001",
+      "node_count": 227
+    },
+    "marketing": {
+      "id": "mkt",
+      "glyph": "📢",
+      "name": "Marketing & Advertising",
+      "monthly_fee_zar": 700.00,
+      "annual_fee_zar": 7000.00,
+      "payout_tier": "B+",
+      "region": "Global Creative",
+      "wallet_id": "FAA-WALLET-SECTOR-MKT-016",
+      "scroll_template": "MKT-SCROLL-001",
+      "node_count": 227
+    },
+    "mining": {
+      "id": "mine",
+      "glyph": "⛏️",
+      "name": "Mining & Resources",
+      "monthly_fee_zar": 1000.00,
+      "annual_fee_zar": 10000.00,
+      "payout_tier": "A",
+      "region": "Global Resources",
+      "wallet_id": "FAA-WALLET-SECTOR-MINE-017",
+      "scroll_template": "MINE-SCROLL-001",
+      "node_count": 227
+    },
+    "ngo": {
+      "id": "ngo",
+      "glyph": "🤝",
+      "name": "NGO & Non-Profit",
+      "monthly_fee_zar": 400.00,
+      "annual_fee_zar": 4000.00,
+      "payout_tier": "B",
+      "region": "Global Social",
+      "wallet_id": "FAA-WALLET-SECTOR-NGO-018",
+      "scroll_template": "NGO-SCROLL-001",
+      "node_count": 227
+    },
+    "pharmaceutical": {
+      "id": "pharma",
+      "glyph": "💊",
+      "name": "Pharmaceutical & Biotech",
+      "monthly_fee_zar": 1350.00,
+      "annual_fee_zar": 13500.00,
+      "payout_tier": "A+",
+      "region": "Global Health",
+      "wallet_id": "FAA-WALLET-SECTOR-PHARMA-019",
+      "scroll_template": "PHARMA-SCROLL-001",
+      "node_count": 227
+    },
+    "realestate": {
+      "id": "re",
+      "glyph": "🏘️",
+      "name": "Real Estate & Property",
+      "monthly_fee_zar": 950.00,
+      "annual_fee_zar": 9500.00,
+      "payout_tier": "A",
+      "region": "Global Property",
+      "wallet_id": "FAA-WALLET-SECTOR-RE-020",
+      "scroll_template": "RE-SCROLL-001",
+      "node_count": 227
+    },
+    "research": {
+      "id": "res",
+      "glyph": "🔬",
+      "name": "Research & Development",
+      "monthly_fee_zar": 800.00,
+      "annual_fee_zar": 8000.00,
+      "payout_tier": "B+",
+      "region": "Global Innovation",
+      "wallet_id": "FAA-WALLET-SECTOR-RES-021",
+      "scroll_template": "RES-SCROLL-001",
+      "node_count": 227
+    },
+    "retail": {
+      "id": "retail",
+      "glyph": "🛍️",
+      "name": "Retail & E-commerce",
+      "monthly_fee_zar": 700.00,
+      "annual_fee_zar": 7000.00,
+      "payout_tier": "B+",
+      "region": "Global Consumer",
+      "wallet_id": "FAA-WALLET-SECTOR-RETAIL-022",
+      "scroll_template": "RETAIL-SCROLL-001",
+      "node_count": 227
+    },
+    "security": {
+      "id": "sec",
+      "glyph": "🔐",
+      "name": "Security & Defense",
+      "monthly_fee_zar": 1500.00,
+      "annual_fee_zar": 15000.00,
+      "payout_tier": "A+",
+      "region": "Global Security",
+      "wallet_id": "FAA-WALLET-SECTOR-SEC-023",
+      "scroll_template": "SEC-SCROLL-001",
+      "node_count": 227
+    },
+    "sports": {
+      "id": "sport",
+      "glyph": "⚽",
+      "name": "Sports & Recreation",
+      "monthly_fee_zar": 650.00,
+      "annual_fee_zar": 6500.00,
+      "payout_tier": "B",
+      "region": "Global Entertainment",
+      "wallet_id": "FAA-WALLET-SECTOR-SPORT-024",
+      "scroll_template": "SPORT-SCROLL-001",
+      "node_count": 227
+    },
+    "technology": {
+      "id": "tech",
+      "glyph": "💻",
+      "name": "Technology & Software",
+      "monthly_fee_zar": 1150.00,
+      "annual_fee_zar": 11500.00,
+      "payout_tier": "A",
+      "region": "Global Tech",
+      "wallet_id": "FAA-WALLET-SECTOR-TECH-025",
+      "scroll_template": "TECH-SCROLL-001",
+      "node_count": 227
+    },
+    "telecommunications": {
+      "id": "telecom",
+      "glyph": "📡",
+      "name": "Telecommunications",
+      "monthly_fee_zar": 1100.00,
+      "annual_fee_zar": 11000.00,
+      "payout_tier": "A",
+      "region": "Global Connectivity",
+      "wallet_id": "FAA-WALLET-SECTOR-TELECOM-026",
+      "scroll_template": "TELECOM-SCROLL-001",
+      "node_count": 227
+    },
+    "textiles": {
+      "id": "textile",
+      "glyph": "🧵",
+      "name": "Textiles & Fashion",
+      "monthly_fee_zar": 600.00,
+      "annual_fee_zar": 6000.00,
+      "payout_tier": "B",
+      "region": "Global Consumer",
+      "wallet_id": "FAA-WALLET-SECTOR-TEXTILE-027",
+      "scroll_template": "TEXTILE-SCROLL-001",
+      "node_count": 227
+    },
+    "transportation": {
+      "id": "trans",
+      "glyph": "🚚",
+      "name": "Transportation & Mobility",
+      "monthly_fee_zar": 850.00,
+      "annual_fee_zar": 8500.00,
+      "payout_tier": "A",
+      "region": "Global Transport",
+      "wallet_id": "FAA-WALLET-SECTOR-TRANS-028",
+      "scroll_template": "TRANS-SCROLL-001",
+      "node_count": 227
+    },
+    "waste": {
+      "id": "waste",
+      "glyph": "♻️",
+      "name": "Waste Management",
+      "monthly_fee_zar": 550.00,
+      "annual_fee_zar": 5500.00,
+      "payout_tier": "B",
+      "region": "Global Environmental",
+      "wallet_id": "FAA-WALLET-SECTOR-WASTE-029",
+      "scroll_template": "WASTE-SCROLL-001",
+      "node_count": 227
+    },
+    "water": {
+      "id": "water",
+      "glyph": "💧",
+      "name": "Water & Sanitation",
+      "monthly_fee_zar": 750.00,
+      "annual_fee_zar": 7500.00,
+      "payout_tier": "B+",
+      "region": "Global Infrastructure",
+      "wallet_id": "FAA-WALLET-SECTOR-WATER-030",
+      "scroll_template": "WATER-SCROLL-001",
+      "node_count": 227
+    },
+    "wildlife": {
+      "id": "wild",
+      "glyph": "🦁",
+      "name": "Wildlife & Conservation",
+      "monthly_fee_zar": 700.00,
+      "annual_fee_zar": 7000.00,
+      "payout_tier": "B+",
+      "region": "Global Conservation",
+      "wallet_id": "FAA-WALLET-SECTOR-WILD-031",
+      "scroll_template": "WILD-SCROLL-001",
+      "node_count": 227
+    }
+  },
+  "licenses": {
+    "types": {
+      "omnikey_enterprise": {
+        "name": "OmniKey™ Enterprise",
+        "tier": "Premium",
+        "features": [
+          "Full sector access",
+          "Unlimited users",
+          "Priority support",
+          "Custom integrations",
+          "Dedicated account manager"
+        ]
+      },
+      "seadwave_standard": {
+        "name": "Seadwave™ Standard",
+        "tier": "Standard",
+        "features": [
+          "Single sector access",
+          "Up to 10 users",
+          "Standard support",
+          "API access"
+        ]
+      }
+    }
+  },
+  "compliance": {
+    "frameworks": ["FAA", "ECTA", "GDPR"],
+    "level": "ATOM",
+    "documents": {
+      "FDN-001": "Trademark registration",
+      "FDN-002": "Copyright protection",
+      "FDN-003": "Business registration",
+      "FDN-004": "Patent application",
+      "FDN-005": "Licensing agreements",
+      "FDN-006": "Legal governance",
+      "FDN-007": "Investor compliance",
+      "FDN-008": "Inline compliance audit",
+      "FDN-009": "Global engagement",
+      "FDN-010": "Financial compliance audit",
+      "FDN-011": "Technical compliance audit",
+      "FDN-012": "Security compliance audit",
+      "FDN-013": "Operational compliance audit",
+      "FDN-014": "FAA naming disambiguation",
+      "FDN-015": "FAA wallet architecture"
+    }
+  },
+  "api": {
+    "base_url": "https://seedwave.faa.zone/api",
+    "version": "v1",
+    "endpoints": {
+      "health": "/health",
+      "sectors": "/sectors",
+      "sector_detail": "/sectors/:id",
+      "process_payment": "/wallet/process-payment",
+      "generate_scroll": "/scrolls/generate",
+      "generate_license": "/licenses/generate",
+      "node_status": "/nodes/status",
+      "wallet_info": "/wallet/info",
+      "paypal_subscription": "/paypal/create-subscription",
+      "paypal_webhook": "/paypal/webhook"
+    }
+  },
+  "deployment": {
+    "primary_platform": "Vercel",
+    "orchestrator_platform": "Cloudflare Workers",
+    "domains": {
+      "main": "seedwave.faa.zone",
+      "admin": "admin.faa.zone",
+      "wallet": "wallet.faa.zone",
+      "api": "api.faa.zone",
+      "orchestrator": "orchestrator.faa.zone"
+    }
+  }
+}
